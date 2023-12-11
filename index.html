@@ -1,1 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя контрольна робота №1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet"> 
+    <style type="text/css">
+               body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
 
+        .block {
+  width: 250px;
+  height: 360px; 
+  border: 1px solid #000; 
+  margin: 10px;
+  padding: 10px; 
+  font-size: 18px;
+}
+
+
+        
+        header {
+            background-color: #f0f0f0;
+            padding: 10px;
+            font-family: 'Rubik Bubbles', sans-serif;
+        }
+
+        h4 {
+            border: 1px;
+            font-family: 'Lobster', sans-serif;
+           
+        }
+
+        header h1, header h2, header h3 {
+            color: #333;
+        }
+
+        .block {
+            font-family: 'Comfortaa', sans-serif;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    padding: 50px;
+}
+
+        #block1 {
+            background-color: purple; 
+            color: white;
+        }
+
+        #block2 {
+            background-color: navy;
+            color: white;
+        }
+
+        #block3 {
+            background-color: orange;
+            display: flex;
+        }
+
+        #block4 {
+            background-color: red;
+    
+        }
+
+        #block1 h4, #block2 h4, #block3 h4, #block4 h4 {
+            width: 200px ;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #333;
+            border-radius: 5px;
+            color: #fff;
+
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        #block1 h4 {
+            background-color: GreenYellow;
+            color: black;
+        }
+
+        #block2 h4 {
+            background-color: yellow;
+            color: black;
+        }
+
+        #block3 h4 {
+            background-color: blue;
+        }
+
+        #block4 h4 {
+            background-color: lime;
+        }
+
+        #block1, #block2, #block3, #block4 {
+            width: 100%;
+        }
+
+        @media (max-width: 769px) {
+    #block1, #block2 {
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+    }
+
+    #block3, #block4 {
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px ) {
+    #block1, #block2 {
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+    }
+
+    #block3, #block4 {
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+    }
+}
+
+@media (min-width: 993px) and (max-width:1200) {
+    #block1, #block2, #block3 {
+        width: 31%;
+        float: left;
+        margin-right: 2%;
+    }
+
+    #block4 {
+        width: 31%;
+        float: left;
+        margin-right: 2%;
+    }
+}
+
+@media (min-width: 1201px) {
+    #block1, #block2, #block3, #block4 {
+        width: 23.5%;
+        float: left;
+        margin-right: 2%;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Контрольна робота</h1>
+        <h2>Тукшинкіна Захара Євгеновича</h2>
+        <h3>варіант 2</h3>
+    </header>
+
+    <section class="block" id="block1">
+        <h4>Текст</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
+    <section class="block" id="block2">
+        <h4>Список</h4>
+        <ul>
+            <li>Чай</li>
+            <li>Овочі:</li>
+            <ol>
+                <li>Капуста</li>
+                <li>Морква</li>
+                <li>Буряк</li>
+            </ol>
+            <li>Сир</li>
+            <li>Сметана</li>
+            <li>Кетчуп</li>
+          </ul>
+    </section>
+
+    ,<section class="block" id="block3">
+        <h4>Таблиця</h4>
+        <table border="1">
+        <thead>
+            <tr>
+                <th>Місто</th>
+                <th>Населення</th>
+            </tr>
+        </thead>
+        <tbody> 
+            <tr>
+                <td>Дублін</td>
+                <td>1,1 млн. ос.</td>
+            </tr>
+            <tr>
+                <td>Ер-Ріяд</td>
+                <td>7,6 млн. ос.</td>
+            </tr>
+            <tr>
+                <td>Мюнхен</td>
+                <td>1,4 млн. ос.</td>
+            </tr>
+            <tr>
+                <td>Детройт</td>
+                <td>0,6 млн. ос.</td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+
+    <section class="block" id="block4"> 
+        <h4>Зображення</h4>
+        <img src="https://place-hold.it/320x240/green" alt="Placeholder Image" width="320" height="240">
+        <p>Посилання на зображення: <a href="https://place-hold.it/320x240/green" target="_blank">https://place-hold.it/320x240/green</a></p>
+    </section>
+    
+</body>
+</html>
